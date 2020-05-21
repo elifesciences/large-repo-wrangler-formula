@@ -1,17 +1,21 @@
 # `large-repo-wrangler` formula
 
-This repository contains instructions for installing and configuring the `large-repo-wrangler`
-project.
+This SaltStack formula installs a collection of tools required to wrangle large repositories on to Github.
 
-This repository should be structured as any Saltstack formula should, but it 
-should also conform to the structure required by the [builder](https://github.com/elifesciences/builder) 
-project.
+Large repositories are those with files larger than 100MB (the maximum allowed), either in the current working set of
+files or somewhere in their history.
 
-See the eLife [builder example project](https://github.com/elifesciences/builder-example-project)
-for a reference on how to integrate with the `builder` project.
+Within your Builder installation, run:
+
+    PROJECT=large-repo-wrangler vagrant up
+    
+and then
+
+    PROJECT=large-repo-wrangle vagrant ssh
 
 Related repositories:
 
+* [playbook](elife-playbook/operations/elifesciences-publications/large-repositories.md)
 * [elife-pub-scripts](https://github.com/elifesciences/elife-pub-scripts)
 
 [MIT licensed](LICENCE.txt)
