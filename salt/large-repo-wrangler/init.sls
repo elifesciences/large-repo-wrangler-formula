@@ -7,7 +7,7 @@ dependencies:
 bfg installation:
     file.managed:
         - name: /usr/share/bfg-1.12.16.jar
-        - source: http://repo1.maven.org/maven2/com/madgag/bfg/1.12.16/bfg-1.12.16.jar
+        - source: https://repo1.maven.org/maven2/com/madgag/bfg/1.12.16/bfg-1.12.16.jar
         - source_hash: c3d1c13b5a0023fdeb93353b2386563c
         - require:
             - dependencies
